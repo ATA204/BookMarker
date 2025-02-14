@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- <div class="fixed-bottom">
+        <nav class="navbar navbar-expand-lg bg-dark mb-1">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="https://www.facebook.com/profile.php?id=100008393493599" target="blank"><i
+                                    class="fa-brands fa-facebook-f text-white fs-3"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="https://www.instagram.com/mohamedata79/"
+                                target="blank"><i class="fa-brands fa-instagram text-white fs-3"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="https://github.com/ATA204" target="_blank"><i
+                                    class="fa-brands fa-github text-white fs-3"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page"
+                                href="https://www.linkedin.com/in/mohamed-ata-1102442b5/" target="_blank"><i
+                                    class="fa-brands fa-linkedin text-white fs-3"></i></a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div> -->
+    <div class="container">
+        <h1 class="my-4">Bookmarker</h1>
+        <hr>
+        <h2 class="text-center my-4">Bookmark your favourite sites</h2>
+
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-8 ">
+                <div class=" text-md-center text-black p-5 pb-3 form-color my-5 ">
+                    <label for="" class="fw-bold mb-2">Site Name</label>
+                    <input type="text" placeholder="Bookmark Name" id="siteName" class="form-control mb-md-2 ">
+                    <label for="" class="fw-bold mb-2">Site URL</label>
+                    <input type="text" placeholder="https://site.com" id="siteUrl" class="form-control  mb-md-2">
+                    <button class="btn btn-success px-3 my-2" disabled id="addBtn" onclick="addSite()">Add</button>
+                   
+                </div>
+
+                <div class="my-5">
+                    <input type="text" placeholder="Search Bookmarks" class="form-control rounded-pill"
+                        oninput="searchsite(this.value)">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7 m-auto">
+
+                <table class="table table-success table-responsive-sm text-center">
+                    <tbody id="tableBody">
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
